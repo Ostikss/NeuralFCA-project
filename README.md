@@ -5,19 +5,16 @@
 ## Description
 
 The dataset called "Employability Classification of Over 70,000 Job Applicants" (though we will use only 1000 observations for performance reasons) provides a detailed collection of information about job applicants and their employability scores. Based on survey responses, the dataset includes the following columns:
-- Age: The applicant's age, categorized as >35 years or <35 years (categorical)
--EdLevel: The applicant's education level (Undergraduate, Master, PhD, etc.)
-(categorical)
-- Gender: The applicant's gender (Man, Woman, or NonBinary) (categorical)
-- MainBranch: Indicates whether the applicant is a professional developer
-(categorical)
--YearsCode: The number of years the applicant has been coding (integer)
--YearsCodePro: The number of years the applicant has been coding in a
-professional setting (integer)
--PreviousSalary: The applicant's previous job salary (float)
--ComputerSkills: The number of computer skills known by the applicant (integer)
--Employed: The target variable, indicating whether the applicant was hired
-(categorical)
+
+Age: age of the applicant, >35 years old or <35 years old (categorical)
+EdLevel: education level of the applicant (Undergraduate, Master, PhD…) (categorical)
+Gender: gender of the applicant, (Man, Woman, or NonBinary) (categorical)
+MainBranch: whether the applicant is a profesional developer (categorical)
+YearsCode: how long the applicant has been coding (integer)
+YearsCodePro: how long the applicant has been coding in a professional context, (integer)
+PreviousSalary: the applicant's previous job salary (float)
+ComputerSkills: number of computer skills known by the applicant (integer)
+Employed: target variable, whether the applicant has been hired (categorical).
 
 ## Preprocessing 
 - Get 1000 rows 
