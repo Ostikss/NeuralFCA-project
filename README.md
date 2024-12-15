@@ -5,18 +5,18 @@
 ## Description
 
 The dataset called "Employability Classification of Over 70,000 Job Applicants" (though we will use only 1000 observations for performance reasons) provides a detailed collection of information about job applicants and their employability scores. Based on survey responses, the dataset includes the following columns:
--  Age: The applicant's age, categorized as >35 years or <35 years (categorical)
-- EdLevel: The applicant's education level (Undergraduate, Master, PhD, etc.)
+- Age: The applicant's age, categorized as >35 years or <35 years (categorical)
+-EdLevel: The applicant's education level (Undergraduate, Master, PhD, etc.)
 (categorical)
--  Gender: The applicant's gender (Man, Woman, or NonBinary) (categorical)
--  MainBranch: Indicates whether the applicant is a professional developer
+- Gender: The applicant's gender (Man, Woman, or NonBinary) (categorical)
+- MainBranch: Indicates whether the applicant is a professional developer
 (categorical)
-- YearsCode: The number of years the applicant has been coding (integer)
-- YearsCodePro: The number of years the applicant has been coding in a
+-YearsCode: The number of years the applicant has been coding (integer)
+-YearsCodePro: The number of years the applicant has been coding in a
 professional setting (integer)
-- PreviousSalary: The applicant's previous job salary (float)
-- ComputerSkills: The number of computer skills known by the applicant (integer)
-- Employed: The target variable, indicating whether the applicant was hired
+-PreviousSalary: The applicant's previous job salary (float)
+-ComputerSkills: The number of computer skills known by the applicant (integer)
+-Employed: The target variable, indicating whether the applicant was hired
 (categorical)
 
 ## Preprocessing 
@@ -37,27 +37,10 @@ The model was built by selecting the 50 best formal concepts (the best results a
   Figure 1 :  Network Visualization of Formal Concepts with Fitted Edge Weights
   
 ## Results
-Model
-Accuracy
-F1-score
-KNeighborsClassifier
-0.783
-0.782
-DecisionTree
-0.783
-0.781
-RandomForest
-0.810
-0.805
-LogisticRegression
-0.820
-0.818
-NeuralFCA
-0.823
-0.824
-<img width="699" alt="image" src="https://github.com/user-attachments/assets/34dfab95-869d-4c2e-baeb-6db740629641" />
+<img width="421" alt="Снимок экрана 2024-12-15 в 15 19 35" src="https://github.com/user-attachments/assets/c5181b07-340e-4e59-8438-90fc52c458cd" />
+
+NeuralFCA achieves the highest performance, with Accuracy of 0.823 and F1-score of 0.824, outperforming a little all other models. 
 
 ## Conclusion 
 
 NeuralFCA achieves the highest performance, with Accuracy of 0.823 and F1-score of 0.824, outperforming a little all other models. But we sholud bear in mind that we construct neural network, bionirised and preprocessed data, whereas for other models we don't do nothing. Also one of important conslusion that NeuralFCA good at working with small and balanced sample like in our case (only 1000 rows).
-
